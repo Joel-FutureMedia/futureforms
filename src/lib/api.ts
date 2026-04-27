@@ -3,7 +3,7 @@ import { getAuth, clearAuth } from "@/lib/auth";
 
 export const API_BASE_URL =
   (typeof window !== "undefined" && (window as any).__API_BASE__) ||
-  "http://localhost:8081/api";
+  "https://futureapi.simplyfound.ggff.net/api";
 
 export const api = axios.create({ baseURL: API_BASE_URL });
 
